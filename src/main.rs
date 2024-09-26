@@ -6,9 +6,7 @@ use logic::Trace;
 use std::collections::HashMap;
  
 fn main() {
-    // -------------------------
     // Realizable Example
-    // -------------------------
     // Requirement: Always, if the battery is low, then eventually the spacecraft will recharge.
     let formula_realizable = Always::new(Implies::new(
         Proposition::new("battery_low"),
@@ -58,9 +56,7 @@ fn main() {
     let satisfied_realizable = formula_realizable.satisfied_by(&trace_realizable).unwrap();
     println!("Realizable formula is satisfied: {}", satisfied_realizable);
 
-    // -------------------------
     // Non-Realizable Example
-    // -------------------------
     // Requirement 1: Always, if the battery is low, then eventually the spacecraft will recharge.
     // Requirement 2: Always, the spacecraft cannot recharge.
     let formula_non_realizable = And::new(
