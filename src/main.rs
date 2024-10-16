@@ -115,3 +115,11 @@ fn main() {
         satisfied_non_realizable
     );
 }
+
+
+
+// The vehicle shall `at the next timepoint` satisfy `lift_mode` = `wing_borne`.
+// // The vehicle shall `until` `lift_mode` = `semi_wing_borne` `and` (`kias` <= 30.0 `or` `kias` > 100)   
+// The vehicle shall `within` 16 `ticks` satisfy `lift_mode` = `thrust_borne`
+// The vehiccle shall `always` satisfy -30.0 <= `wind_speed` `and` `wind_speed`` <= 30.0
+// The vehichle shall
